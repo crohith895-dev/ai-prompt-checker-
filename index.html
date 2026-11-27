@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Quality Checker</title>
+
+    <!-- Connect external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect external JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>AI Prompt Quality Checker</h1>
+        <p>Improve your prompt engineering skills!</p>
+    </header>
+
+    <main class="container">
+
+        <section class="input-card">
+            <h2>Enter Your AI Prompt</h2>
+            <p>Write or paste your prompt below.</p>
+
+            <textarea id="promptInput"
+                placeholder="Enter your AI prompt here..."></textarea>
+
+            <div class="buttons">
+                <button id="checkBtn">Check Prompt</button>
+                <button id="sampleBtn" class="sample-btn">
+                    Load Sample Prompt
+                </button>
+                <button id="clearBtn" class="clear-btn">
+                    Clear
+                </button>
+            </div>
+
+            <p id="errorMessage" class="error"></p>
+        </section>
+
+        <section class="result-card">
+            <h2>Prompt Analysis Results</h2>
+
+            <div class="score">
+                <span id="score">0</span>
+                <span>/ 100</span>
+            </div>
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <h3 id="rating">Your Rating: Not checked</h3>
+
+            <h3>Component Analysis</h3>
+            <ul id="componentList">
+                <li>Results will appear here.</li>
+            </ul>
+
+            <h3>Improvement Suggestions</h3>
+            <ul id="suggestions">
+                <li>Check your prompt to get suggestions.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AI Prompt Quality Checker | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+</body>
+</html>
